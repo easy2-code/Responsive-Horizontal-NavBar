@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Nav Bar </title>
     <style>
-        body
-        {
+        body {
             margin: 0px;
         }
-        ul
-        {
+        
+        ul {
             list-style-type: none;
             margin: 0px;
             padding: 0px;
@@ -20,53 +20,53 @@
             top: 0px;
             width: 100%;
         }
-        li
-        {
+        
+        li {
             float: left;
         }
-        li#right
-        {
+        
+        li#right {
             float: right;
         }
-        li a
-        {
+        
+        li a {
             text-decoration: none;
             display: block;
             padding: 14px 16px;
             color: white;
         }
-        a.active
-        {
+        
+        a.active {
             background-color: #04AA6D;
         }
-        li a:hover:not(.active)
-        {
+        
+        li a:hover:not(.active) {
             background-color: #111;
         }
-        .box
-        {
+        
+        .box {
             background-color: lightgray;
             margin-top: 46px;
             padding: 30px;
         }
-        .box p
-        {
+        
+        .box p {
             text-align: justify;
         }
-        @media screen and (max-width: 600px) 
-        {
-            ul li#right, ul li 
-            {
+        
+        @media screen and (max-width: 600px) {
+            ul li#right,
+            ul li {
                 float: none;
                 text-align: center;
             }
-            .box
-            {
+            .box {
                 margin-top: 150px;
             }
         }
     </style>
 </head>
+
 <body>
     <ul>
         <li><a href="home.html" class="active">Home</a></li>
@@ -77,8 +77,10 @@
     <div class="box">
         <h1>Hello World....!</h1>
         <p>
-            My name is luqman khan. I am a student of class 8th.
+            Subscribe my Youtube Channel for more.
+            <a href="https://youtube.com/@easy2code" target="_blank">easy2code</a>
         </p>
     </div>
 </body>
+
 </html>
