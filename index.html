@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav Bar </title>
+    <style>
+        body
+        {
+            margin: 0px;
+        }
+        ul
+        {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        }
+        li
+        {
+            float: left;
+        }
+        li#right
+        {
+            float: right;
+        }
+        li a
+        {
+            text-decoration: none;
+            display: block;
+            padding: 14px 16px;
+            color: white;
+        }
+        a.active
+        {
+            background-color: #04AA6D;
+        }
+        li a:hover:not(.active)
+        {
+            background-color: #111;
+        }
+        .box
+        {
+            background-color: lightgray;
+            margin-top: 46px;
+            padding: 30px;
+        }
+        .box p
+        {
+            text-align: justify;
+        }
+        @media screen and (max-width: 600px) 
+        {
+            ul li#right, ul li 
+            {
+                float: none;
+                text-align: center;
+            }
+            .box
+            {
+                margin-top: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li id="right"><a href="about.html">About</a></li>
+    </ul>
+    <div class="box">
+        <h1>Hello World....!</h1>
+        <p>
+            My name is luqman khan. I am a student of class 8th.
+        </p>
+    </div>
+</body>
+</html>
